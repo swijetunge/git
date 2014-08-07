@@ -43,9 +43,10 @@ function getFileList($dir)
           "lastmod" => filemtime("$dir$entry")
         );
       } elseif(is_readable("$dir$entry")) {
+      	$fi = new finfo(FILEINFO_MIME);
         $retval[] = array(
           "name" => "$dir$entry",
-          "type" => mime_content_type("$dir$entry"),
+          "type" => $fi->buffer(file_get_contents("$dir$entry")),
           "size" => filesize("$dir$entry"),
           "lastmod" => filemtime("$dir$entry")
         );
