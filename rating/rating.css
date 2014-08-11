@@ -1,0 +1,26 @@
+.article { padding-bottom:10px; }
+.article-rate { display: inline-block; }
+
+.rating {
+	margin-top: 3px;
+	clear: both;
+	display: inline-block;
+}
+.star{
+	float: left;
+	width: 17px;
+	height: 15px;
+	overflow: hidden;
+	text-indent: -999em;
+}
+
+.star{background: url(star.gif) no-repeat 0 0px;}
+.star a {
+	display: block;
+}
+
+.stared{background-position: 0 -16px;}
+
+.active {
+	background-position: 0 -32px;
+}
