@@ -1,0 +1,63 @@
+div#mainContent *{
+	font-family: Trebuchet MS, Verdana, Arial;
+	text-align:left;
+	margin:0;
+	padding:0;
+	line-height:110%;
+	clear:both;
+}
+
+div#mainContent div.rssincl-head { 
+	padding:5.00px; 
+	background-color: #FFFFFF;
+}
+
+div#mainContent div.rssincl-head p.rssincl-title,
+div#mainContent div.rssincl-head p.rssincl-title a { 
+	text-decoration:none;
+	font-family: Trebuchet MS, Verdana, Arial;
+	font-size: 15.00px;
+	font-weight:bold;
+	color: #000000;
+}
+
+div#mainContent div.rssincl-content {}
+
+div#mainContent div.rssincl-content table {border-collapse:collapse;}
+
+div#mainContent div.rssincl-content table tr td {
+	width:0px;
+	vertical-align:top;
+	background-color: #FFFFFF;
+}
+
+div#mainContent div.rssincl-content table tr td.rssincl-righttd {
+
+}
+
+div#mainContent div.rssincl-content div.rssincl-entry { 
+	padding:5px 10px 25px 5px;
+}
+
+div#mainContent div.rssincl-content div.rssincl-last {
+	background-color: #FFFFFF;
+
+}
+
+div#mainContent div.rssincl-content div.rssincl-entry div.rssincl-backlink {
+	font-family: ;
+	font-size: 10px;
+	color: #;
+}
+
+div#mainContent div.rssincl-content div.rssincl-entry div.rssincl-backlink a {
+	color: #;
+	line-height:130%;
+    text-decoration: none;
+}
+
+div#mainContent div.rssincl-content div.rssincl-entry div.rssincl-clear {
+	clear:both;
+}
+
+strong { font-weight: bold; }
