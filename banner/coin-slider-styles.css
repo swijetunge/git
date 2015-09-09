@@ -3,7 +3,8 @@
 	http://workshop.rs/projects/coin-slider
 */
 
-
+#games { margin: 5px auto; 
+}
 .coin-slider { overflow: hidden; zoom: 1; position: relative; }
 .coin-slider a{ text-decoration: none; outline: none; border: none; }
 

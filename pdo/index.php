@@ -8,11 +8,11 @@ $mybook = new Book();
 // $mybookId = $mybook->getId();
 // unset($mybook);
 
-$mybookId = 7;
+$mybookId = 1;
 $bookCopy = Book::findById($mybookId);
 var_dump($bookCopy);
 
-$bookCopy->setTitle("New Name for Ray's book of Fun");
-$bookCopy->save();
-var_dump($bookCopy);
+// $bookCopy->setTitle("New Name for Ray's book of Fun");
+// $bookCopy->save();
+// var_dump($bookCopy);
 ?>
