@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
+<link href="style.css" rel="stylesheet" />
+</head>
+<body ng-app="app" ng-controller="AppCtrl as app">
+	<div class="container">
+		<div class="row">
+			<button class="btn-primary" ng-click="app.fadeIt()">Toggle Fade</button>
+			<div class="fademe toggle" hide-me="app.isHidden"></div>
+			<div class="fademe toggle"></div>
+			<div class="fademe toggle" hide-me="app.isHidden"></div>
+			<div class="fademe toggle" hide-me="app.isHidden"></div>
+		</div>
+	</div>
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/angular.js"></script>
+	<script src="../js/angular-animate.js"></script>
+
+	<!-- Modules -->
+	<script src="app.js"></script>
+
+	<!-- Controllers -->
+	<script src="MainController.js"></script>
+	
+	<!-- Directives -->
+    <script src="appDirectives.js"></script>
+    
+</body>
+</html>

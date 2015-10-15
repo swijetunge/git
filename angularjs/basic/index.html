@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class=" -webkit-">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<title>Angular JS</title>
+</head>
+<body>
+	<div ng-app="myApp" ng-init="lastname='Johnson'; names=['Jani','Hege','Kai']; yourage=18; total=200; vat=0.3"  ng-controller="personCtrl">
+		<p>First Name : <input type="text" ng-model="firstname"></p>
+	 	<p>Last Name : <input type="text" ng-model="lastname"></p>
+		<p>Age : <input type="text" ng-model="yourage"></p>
+		
+	 	<h3>Hello {{lastname}}</h3>
+		<h3>Half of your age is {{yourage/2}}</h3>
+		<ul>
+			<li ng-repeat="x in names">
+			  {{ x }}
+			</li>
+		</ul>
+		<h1>Full Name {{fullname()}}</h1>
+		<p>VAT : <input type="text" ng-model="vat" value="{{vat | percentage}}"></p>
+		<h3>Total: <span ng-model="total">{{totalwithvat() | currency:"£ ":2  }}</span> </h3>
+	</div>
+	
+	<script>
+		var app = angular.module('myApp', []);
+		app.controller('personCtrl', function($scope) {
+			$scope.firstname = "Doe";
+			$scope.fullname = function() {
+				return $scope.firstname + " " + $scope.lastname;
+			};	
+			$scope.totalwithvat = function() {
+				return $scope.total + ($scope.total * $scope.vat);
+			};
+		});
+				
+		app.filter('percentage', ['$filter', function ($filter) {
+		  return function (input, decimals) {
+			return $filter('number')(input * 100, decimals) + '%';
+		  };
+		}]);;
+
+	</script>
+</body>
+</html>
