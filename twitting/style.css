@@ -1,0 +1,11 @@
+body {
+	margin: 0;
+	font-family: "Helvetica", sans-serif;
+	font-size: 1em;
+	line-height: 1.2;
+}
+
+.wrapper {
+	width: 100%;
+}
+
