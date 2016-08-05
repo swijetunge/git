@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>inewsticker</title>
+</head>
+<style>
+</style>
+
+<body>
+	<aside class="wrapper">   
+		<ul class="fade">
+			<li>Please feel free to browse all the great benefits available to you</li>
+			<li>We are committed to helping both our customers and our colleagues Save Money so they can Live Better</li>
+			<li>Thank you for the hard work you do for us every day</li>
+			<li>Welcome to the new look Everyone Benefits site!</li>
+        </ul>
+    </aside>
+    
+    <aside class="wrapper">   
+		<ul class="slide">
+			<li>Please feel free to browse all the great benefits available to you</li>
+			<li>We are committed to helping both our customers and our colleagues Save Money so they can Live Better</li>
+			<li>Thank you for the hard work you do for us every day</li>
+			<li>Welcome to the new look Everyone Benefits site!</li>
+        </ul>
+    </aside>
+    
+    <aside class="wrapper">   
+		<ul class="typing">
+			<li>Please feel free to browse all the great benefits available to you</li>
+			<li>We are committed to helping both our customers and our colleagues Save Money so they can Live Better</li>
+			<li>Thank you for the hard work you do for us every day</li>
+			<li>Welcome to the new look Everyone Benefits site!</li>
+        </ul>
+    </aside>
+
+	<script src="jquery-1.12.3.min.js"></script>
+	<script src="inewsticker.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.fade').inewsticker({
+				speed : 3000,
+				effect : 'fade',
+				dir : 'ltr',
+				font_size : 13,
+				color : '#555',
+				font_family : 'arial',
+				delay_after : 1000
+			});
+			$('.slide').inewsticker({
+				speed : 2500,
+				effect : 'slide',
+				dir : 'ltr',
+				font_size : 13,
+				color : '#555',
+				font_family : 'arial',
+				delay_after : 1000
+			});
+			$('.typing').inewsticker({
+				speed : 100,
+				effect : 'typing',
+				dir : 'ltr',
+				font_size : 13,
+				color : '#555',
+				font_family : 'arial',
+				delay_after : 1000,
+
+			});
+		});
+	</script>
+</body>
+</html>
