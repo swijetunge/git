@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+ </head>
+<body>
+	<p><strong>Options</strong></p>
+	<table style="width: 829px;" border="1">
+	<thead>
+	<tr>
+	<td style="width: 317px;">
+	<p><strong>key</strong></p>
+	</td>
+	<td style="width: 306px;">
+	<p><strong>option type / notes</strong></p>
+	</td>
+	<td style="width: 205px;">
+	<p><strong>example</strong></p>
+	</td>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.number.value</p>
+	</td>
+	<td style="width: 306px;">
+	<p>number</p>
+	</td>
+	<td style="width: 205px;">
+	<p>40</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.number.density.enable</p>
+	</td>
+	<td style="width: 306px;">
+	<p>boolean</p>
+	</td>
+	<td style="width: 205px;">
+	<p>true&nbsp;/&nbsp;false</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.number.density.value_area</p>
+	</td>
+	<td style="width: 306px;">
+	<p>number</p>
+	</td>
+	<td style="width: 205px;">
+	<p>800</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.color.value</p>
+	</td>
+	<td style="width: 306px;">
+	<p>HEX (string)&nbsp;<br /> RGB (object)&nbsp;<br /> HSL (object)&nbsp;<br /> array selection (HEX)&nbsp;<br /> random (string)</p>
+	</td>
+	<td style="width: 205px;">
+	<p>"#b61924"&nbsp;<br /> {r:182, g:25, b:36}&nbsp;<br /> {h:356, s:76, l:41}&nbsp;<br /> ["#b61924", "#333333", "999999"]&nbsp;<br /> "random"</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.shape.type</p>
+	</td>
+	<td style="width: 306px;">
+	<p>string&nbsp;<br /> array selection</p>
+	</td>
+	<td style="width: 205px;">
+	<p>"circle"&nbsp;<br /> "edge"&nbsp;<br /> "triangle"&nbsp;<br /> "polygon"&nbsp;<br /> "star"&nbsp;<br /> "image"&nbsp;<br /> ["circle", "triangle", "image"]</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.shape.stroke.width</p>
+	</td>
+	<td style="width: 306px;">
+	<p>number</p>
+	</td>
+	<td style="width: 205px;">
+	<p>2</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.shape.stroke.color</p>
+	</td>
+	<td style="width: 306px;">
+	<p>HEX (string)</p>
+	</td>
+	<td style="width: 205px;">
+	<p>"#222222"</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.shape.polygon.nb_slides</p>
+	</td>
+	<td style="width: 306px;">
+	<p>number</p>
+	</td>
+	<td style="width: 205px;">
+	<p>5</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.shape.image.src</p>
+	</td>
+	<td style="width: 306px;">
+	<p>path link&nbsp;<br /> svg / png / gif / jpg</p>
+	</td>
+	<td style="width: 205px;">
+	<p>"assets/img/yop.svg"&nbsp;<br /> "http://mywebsite.com/assets/img/yop.png"</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.shape.image.width</p>
+	</td>
+	<td style="width: 306px;">
+	<p>number&nbsp;<br /> (for aspect ratio)</p>
+	</td>
+	<td style="width: 205px;">
+	<p>100</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.shape.image.height</p>
+	</td>
+	<td style="width: 306px;">
+	<p>number&nbsp;<br /> (for aspect ratio)</p>
+	</td>
+	<td style="width: 205px;">
+	<p>100</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.opacity.value</p>
+	</td>
+	<td style="width: 306px;">
+	<p>number (0 to 1)</p>
+	</td>
+	<td style="width: 205px;">
+	<p>0.75</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.opacity.random</p>
+	</td>
+	<td style="width: 306px;">
+	<p>boolean</p>
+	</td>
+	<td style="width: 205px;">
+	<p>true&nbsp;/&nbsp;false</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.opacity.anim.enable</p>
+	</td>
+	<td style="width: 306px;">
+	<p>boolean</p>
+	</td>
+	<td style="width: 205px;">
+	<p>true&nbsp;/&nbsp;false</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.opacity.anim.speed</p>
+	</td>
+	<td style="width: 306px;">
+	<p>number</p>
+	</td>
+	<td style="width: 205px;">
+	<p>3</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.opacity.anim.opacity_min</p>
+	</td>
+	<td style="width: 306px;">
+	<p>number (0 to 1)</p>
+	</td>
+	<td style="width: 205px;">
+	<p>0.25</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.opacity.anim.sync</p>
+	</td>
+	<td style="width: 306px;">
+	<p>boolean</p>
+	</td>
+	<td style="width: 205px;">
+	<p>true&nbsp;/&nbsp;false</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.size.value</p>
+	</td>
+	<td style="width: 306px;">
+	<p>number</p>
+	</td>
+	<td style="width: 205px;">
+	<p>20</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.size.random</p>
+	</td>
+	<td style="width: 306px;">
+	<p>boolean</p>
+	</td>
+	<td style="width: 205px;">
+	<p>true&nbsp;/&nbsp;false</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.size.anim.enable</p>
+	</td>
+	<td style="width: 306px;">
+	<p>boolean</p>
+	</td>
+	<td style="width: 205px;">
+	<p>true&nbsp;/&nbsp;false</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.size.anim.speed</p>
+	</td>
+	<td style="width: 306px;">
+	<p>number</p>
+	</td>
+	<td style="width: 205px;">
+	<p>3</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.size.anim.size_min</p>
+	</td>
+	<td style="width: 306px;">
+	<p>number</p>
+	</td>
+	<td style="width: 205px;">
+	<p>0.25</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.size.anim.sync</p>
+	</td>
+	<td style="width: 306px;">
+	<p>boolean</p>
+	</td>
+	<td style="width: 205px;">
+	<p>true&nbsp;/&nbsp;false</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.line_linked.enable</p>
+	</td>
+	<td style="width: 306px;">
+	<p>boolean</p>
+	</td>
+	<td style="width: 205px;">
+	<p>true&nbsp;/&nbsp;false</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.line_linked.distance</p>
+	</td>
+	<td style="width: 306px;">
+	<p>number</p>
+	</td>
+	<td style="width: 205px;">
+	<p>150</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.line_linked.color</p>
+	</td>
+	<td style="width: 306px;">
+	<p>HEX (string)</p>
+	</td>
+	<td style="width: 205px;">
+	<p>#ffffff</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.line_linked.opacity</p>
+	</td>
+	<td style="width: 306px;">
+	<p>number (0 to 1)</p>
+	</td>
+	<td style="width: 205px;">
+	<p>0.5</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.line_linked.width</p>
+	</td>
+	<td style="width: 306px;">
+	<p>number</p>
+	</td>
+	<td style="width: 205px;">
+	<p>1.5</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.move.enable</p>
+	</td>
+	<td style="width: 306px;">
+	<p>boolean</p>
+	</td>
+	<td style="width: 205px;">
+	<p>true&nbsp;/&nbsp;false</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.move.speed</p>
+	</td>
+	<td style="width: 306px;">
+	<p>number</p>
+	</td>
+	<td style="width: 205px;">
+	<p>4</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.move.direction</p>
+	</td>
+	<td style="width: 306px;">
+	<p>string</p>
+	</td>
+	<td style="width: 205px;">
+	<p>"none"&nbsp;<br /> "top"&nbsp;<br /> "top-right"&nbsp;<br /> "right"&nbsp;<br /> "bottom-right"&nbsp;<br /> "bottom"&nbsp;<br /> "bottom-left"&nbsp;<br /> "left"&nbsp;<br /> "top-left"</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.move.random</p>
+	</td>
+	<td style="width: 306px;">
+	<p>boolean</p>
+	</td>
+	<td style="width: 205px;">
+	<p>true&nbsp;/&nbsp;false</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.move.straight</p>
+	</td>
+	<td style="width: 306px;">
+	<p>boolean</p>
+	</td>
+	<td style="width: 205px;">
+	<p>true&nbsp;/&nbsp;false</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.move.out_mode</p>
+	</td>
+	<td style="width: 306px;">
+	<p>string&nbsp;<br /> (out of canvas)</p>
+	</td>
+	<td style="width: 205px;">
+	<p>"out"&nbsp;<br /> "bounce"</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.move.bounce</p>
+	</td>
+	<td style="width: 306px;">
+	<p>boolean&nbsp;<br /> (between particles)</p>
+	</td>
+	<td style="width: 205px;">
+	<p>true&nbsp;/&nbsp;false</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.move.attract.enable</p>
+	</td>
+	<td style="width: 306px;">
+	<p>boolean</p>
+	</td>
+	<td style="width: 205px;">
+	<p>true&nbsp;/&nbsp;false</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.move.attract.rotateX</p>
+	</td>
+	<td style="width: 306px;">
+	<p>number</p>
+	</td>
+	<td style="width: 205px;">
+	<p>3000</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>particles.move.attract.rotateY</p>
+	</td>
+	<td style="width: 306px;">
+	<p>number</p>
+	</td>
+	<td style="width: 205px;">
+	<p>1500</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>interactivity.detect_on</p>
+	</td>
+	<td style="width: 306px;">
+	<p>string</p>
+	</td>
+	<td style="width: 205px;">
+	<p>"canvas", "window"</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>interactivity.events.onhover.enable</p>
+	</td>
+	<td style="width: 306px;">
+	<p>boolean</p>
+	</td>
+	<td style="width: 205px;">
+	<p>true&nbsp;/&nbsp;false</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>interactivity.events.onhover.mode</p>
+	</td>
+	<td style="width: 306px;">
+	<p>string&nbsp;<br /> array selection</p>
+	</td>
+	<td style="width: 205px;">
+	<p>"grab"&nbsp;<br /> "bubble"&nbsp;<br /> "repulse"&nbsp;<br /> ["grab", "bubble"]</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>interactivity.events.onclick.enable</p>
+	</td>
+	<td style="width: 306px;">
+	<p>boolean</p>
+	</td>
+	<td style="width: 205px;">
+	<p>true&nbsp;/&nbsp;false</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>interactivity.events.onclick.mode</p>
+	</td>
+	<td style="width: 306px;">
+	<p>string&nbsp;<br /> array selection</p>
+	</td>
+	<td style="width: 205px;">
+	<p>"push"&nbsp;<br /> "remove"&nbsp;<br /> "bubble"&nbsp;<br /> "repulse"&nbsp;<br /> ["push", "repulse"]</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>interactivity.events.resize</p>
+	</td>
+	<td style="width: 306px;">
+	<p>boolean</p>
+	</td>
+	<td style="width: 205px;">
+	<p>true&nbsp;/&nbsp;false</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>interactivity.events.modes.grab.distance</p>
+	</td>
+	<td style="width: 306px;">
+	<p>number</p>
+	</td>
+	<td style="width: 205px;">
+	<p>100</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>interactivity.events.modes.grab.line_linked.opacity</p>
+	</td>
+	<td style="width: 306px;">
+	<p>number (0 to 1)</p>
+	</td>
+	<td style="width: 205px;">
+	<p>0.75</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>interactivity.events.modes.bubble.distance</p>
+	</td>
+	<td style="width: 306px;">
+	<p>number</p>
+	</td>
+	<td style="width: 205px;">
+	<p>100</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>interactivity.events.modes.bubble.size</p>
+	</td>
+	<td style="width: 306px;">
+	<p>number</p>
+	</td>
+	<td style="width: 205px;">
+	<p>40</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>interactivity.events.modes.bubble.duration</p>
+	</td>
+	<td style="width: 306px;">
+	<p>number&nbsp;<br /> (second)</p>
+	</td>
+	<td style="width: 205px;">
+	<p>0.4</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>interactivity.events.modes.repulse.distance</p>
+	</td>
+	<td style="width: 306px;">
+	<p>number</p>
+	</td>
+	<td style="width: 205px;">
+	<p>200</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>interactivity.events.modes.repulse.duration</p>
+	</td>
+	<td style="width: 306px;">
+	<p>number&nbsp;<br /> (second)</p>
+	</td>
+	<td style="width: 205px;">
+	<p>1.2</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>interactivity.events.modes.push.particles_nb</p>
+	</td>
+	<td style="width: 306px;">
+	<p>number</p>
+	</td>
+	<td style="width: 205px;">
+	<p>4</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>interactivity.events.modes.push.particles_nb</p>
+	</td>
+	<td style="width: 306px;">
+	<p>number</p>
+	</td>
+	<td style="width: 205px;">
+	<p>4</p>
+	</td>
+	</tr>
+	<tr>
+	<td style="width: 317px;">
+	<p>retina_detect</p>
+	</td>
+	<td style="width: 306px;">
+	<p>boolean</p>
+	</td>
+	<td style="width: 205px;">
+	<p>true&nbsp;/&nbsp;false</p>
+	</td>
+	</tr>
+	</tbody>
+	</table>
+	<p>&nbsp;</p>
+</body>
+</html>
