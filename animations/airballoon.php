@@ -2,10 +2,14 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Animation Bulbs</title>
+        <title>Hot Air Balloon</title>
         
 		<link type="text/css" rel="stylesheet" href="css/styles.css" />
 		<link type="text/css" rel="stylesheet" href="css/social.css" />
+		<link type="text/css" rel="stylesheet" href="css/cloud.css">
+		
+		<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
 	</head>
 	<body>
 		<!-- Floating Vertical Buttons -->
@@ -42,14 +46,17 @@
 	        </a>
 	    </div>
 	    <!-- /.Floating Vertical Buttons -->
-		<div class="image-wrap small">
-		  <div class="background"></div>
-		  <div class="bulb1"></div>
-		  <div class="bulb2"></div>
-		  <div class="bulb3"></div>
-		  <div class="bulb4"></div>
-		  <div class="bulb">Bulbs</div>
-		  <div class="me">Sandun</div>
+	    <div id="balloon-image" class="">
+	    	<img id="balloon1" class="balloon small" src="img/balloon1.png" alt="Air balloon" />
+	    	<img id="balloon2" class="balloon medium" src="img/balloon2.png" alt="Air balloon" />
+	    	<img id="balloon3" class="balloon" src="img/balloon3.png" alt="Air balloon" />
+	    </div>
+		<div id="content" class="sky">
+			<div class="cloud variant-1"></div>
+			<div class="cloud variant-2"></div>
+			<div class="cloud variant-3"></div>
+			<div class="cloud variant-4"></div>
+			<div class="cloud variant-5"></div>
 		</div>
 
 	</body>

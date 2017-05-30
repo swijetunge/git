@@ -1,0 +1,82 @@
+
+/************************** Floating Vertical Buttons *****************/
+#fixedsocial {
+	top: 30%;
+	height: 143px;
+	width: 38px;
+	position: fixed;
+	left: 0;
+	z-index: 1001;
+	cursor: pointer;
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	#fixedsocial { top: 30%; }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	#fixedsocial { top: 30%; }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	#fixedsocial { top: 20%; }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	#fixedsocial { top: 20%; }
+}
+
+#fixedsocial div {
+	background-repeat: no-repeat;
+	height:40px;
+	width:40px;
+	transition:ease 500ms;
+	background-size:32px;
+}
+
+.facebookflat {
+	background-color: #3b579d;
+	fill: #FFF;
+}
+
+.twitterflat {
+	background-color: #1da1f2;
+	fill: #FFF;
+}
+
+.blogflat {
+	background-color: #dd4b39;
+	fill: #FFF;
+}
+
+.linkedinflat {
+	background-color: #2691d9;
+	fill: #FFF;
+}
+
+.hotairballonflat {
+	background-color: #FFF;
+	fill: #FFF;
+}
+
+.homeflat {
+	background-color: #e49300;
+	fill: #FFF;
+}
+
+.twitterflat:hover,
+.blogflat:hover,
+.linkedinflat:hover,
+.facebookflat:hover,
+.hotairballonflat:hover,
+.homeflat:hover {
+	height:32px;
+	padding-left:20px;
+}
+
+
+/************************ /.Floating Vertical Buttons ***************/
