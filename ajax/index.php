@@ -16,5 +16,7 @@
 	</form>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="main.js"></script>
+	
+	<p><a href="/ajax/search.php">Search Page</a></p>
 </body>	
 </html>
